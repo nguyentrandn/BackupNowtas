@@ -1,0 +1,3 @@
+Day la tai lieu tu File .TXT
+
+<p id="a">day la phan tu co id la A</p>

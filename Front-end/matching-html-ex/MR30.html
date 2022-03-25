@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <title>Matching System</title>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-box">
+            <span class="btn-menu" data-bs-toggle="modal" data-bs-target="#menuModal">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <rect width="40" height="40" fill="url(#pattern0)"/>
+                    <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                            <use xlink:href="#image0_1542_9887" transform="scale(0.02)"/>
+                        </pattern>
+                        <image id="image0_1542_9887" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAAe0lEQVRoge3YMQqAMAxA0a94AVev6uxVvJFXcPUCgu5SKB20sfwHXUKGphAaApIkqR1dIjYD09cXKbQDSy5pA67gZ3teui95hsiaKWRIxFb+0SOSpPpSs9ZI+n+J5ASOXJKzVk0WEk3TzS5Jep0LusrHoTE8F3SSJCmgG0ivh+3SA3IfAAAAAElFTkSuQmCC"/>
+                    </defs>
+                </svg>
+            </span>
+        </div>
+    </div>
+</header>
+
+<section class="block_auth container">
+    <div class="title">新規会員登録</div>
+    <form class="form">
+        <div class="form-group">
+            <label>ニックネーム <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" placeholder="ニックネームを入力"/>
+        </div>
+        <div class="form-group">
+            <label>パスワード <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" placeholder="パスワードを入力"/>
+            <div class="note">半角英数字8文字〜20文字</div>
+        </div>
+        <div class="form-group">
+            <label>パスワード確認 <span class="text-danger">*</span></label>
+            <input type="email" class="form-control" placeholder="もう一度パスワードを入力"/>
+        </div>
+        <div class="form-group check-group">
+            <label>このサイトを知ったきっかけ <span class="text-danger">*</span></label>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio1" name="radio">
+                <label class="form-check-label" for="radio1">検索で表示された広告を見た</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio2" name="radio">
+                <label class="form-check-label" for="radio2">紹介しているネットの記事などを読んだ</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio3" name="radio">
+                <label class="form-check-label" for="radio3">知人に教えてもらった</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio4" name="radio">
+                <label class="form-check-label" for="radio4">SNSを見て気になった</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="radio5" name="radio">
+                <label class="form-check-label" for="radio5">その他</label>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">招待メールを送信</button>
+        <div class="more">
+            <p>すでに会員の方はこちら <a href="#">ログイン</a></p>
+            <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
+        </div>
+    </form>
+</section>
+
+<footer class="footer">
+    <ul class="menu_01">
+        <li><a href="#">安心</a></li>
+        <li><a href="#">サービス</a></li>
+        <li><a href="#">使い方</a></li>
+        <li><a href="#">よくある質問</a></li>
+    </ul>
+    <ul class="menu_02">
+        <li><a href="#">安心・安全への取り組み</a></li>
+        <li><a href="#">安全にご利用いただくために</a></li>
+        <li><a href="#">コミュニティガイドライン</a></li>
+        <li><a href="#">クッキーポリシー</a></li>
+        <li><a href="#">利用規約</a></li>
+        <li><a href="#">プライバシーポリシー</a></li>
+        <li><a href="#">仲裁手続き</a></li>
+    </ul>
+    <p class="copyright">インターネット異性紹介事業<br/>
+        届出済み　受理番号: 30190001000<br/>
+        © 2021</p>
+</footer>
+
+<div class="modal fade menuModal" id="menuModal" tabindex="-1" aria-labelledby="menuModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M27.9379 25.0007L36.8962 16.0632C37.2885 15.6709 37.5089 15.1388 37.5089 14.584C37.5089 14.0293 37.2885 13.4972 36.8962 13.1049C36.5039 12.7126 35.9718 12.4922 35.417 12.4922C34.8622 12.4922 34.3302 12.7126 33.9379 13.1049L25.0004 22.0632L16.0629 13.1049C15.6706 12.7126 15.1385 12.4922 14.5837 12.4922C14.0289 12.4922 13.4968 12.7126 13.1045 13.1049C12.7122 13.4972 12.4918 14.0293 12.4918 14.584C12.4918 15.1388 12.7122 15.6709 13.1045 16.0632L22.0629 25.0007L13.1045 33.9382C12.9093 34.1319 12.7543 34.3623 12.6485 34.6162C12.5427 34.87 12.4883 35.1423 12.4883 35.4174C12.4883 35.6924 12.5427 35.9647 12.6485 36.2186C12.7543 36.4725 12.9093 36.7029 13.1045 36.8965C13.2982 37.0918 13.5286 37.2468 13.7825 37.3526C14.0364 37.4583 14.3087 37.5128 14.5837 37.5128C14.8587 37.5128 15.131 37.4583 15.3849 37.3526C15.6388 37.2468 15.8692 37.0918 16.0629 36.8965L25.0004 27.9382L33.9379 36.8965C34.1315 37.0918 34.362 37.2468 34.6158 37.3526C34.8697 37.4583 35.142 37.5128 35.417 37.5128C35.6921 37.5128 35.9644 37.4583 36.2182 37.3526C36.4721 37.2468 36.7025 37.0918 36.8962 36.8965C37.0915 36.7029 37.2465 36.4725 37.3522 36.2186C37.458 35.9647 37.5124 35.6924 37.5124 35.4174C37.5124 35.1423 37.458 34.87 37.3522 34.6162C37.2465 34.3623 37.0915 34.1319 36.8962 33.9382L27.9379 25.0007Z" fill="black"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ul class="menu_01">
+                    <li><a href="#">安心</a></li>
+                    <li><a href="#">サービス</a></li>
+                    <li><a href="#">使い方</a></li>
+                    <li><a href="#">よくある質問</a></li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary w-100">新しくはじめる（無料）</button>
+                <div class="more">
+                    <p>すでに会員の方はこちら <a href="#">ログイン</a></p>
+                    <p>パスワードをお忘れの方は <a href="#">こちら</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

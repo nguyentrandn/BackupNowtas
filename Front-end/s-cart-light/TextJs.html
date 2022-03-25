@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #text {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    #text div {
+        margin: 5px 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+    }
+</style>
+
+<body>
+    <div>
+        <input type="text" id="input">
+        <button id="btn" onclick="newAdd()">Add Element</button>
+        <button onclick="remove()">Remove Element</button>
+    </div>
+    <div id="text">
+
+    </div>
+    <script>
+        function newAdd() {
+            var content = document.getElementById("input").value;
+
+            var newE = document.createElement("div");
+            var newT = document.createTextNode(content);
+            newE.appendChild(newT);
+
+            document.getElementById("text").appendChild(newE);
+
+            newE.addEventListener("click", function() {
+                var x = document.getElementById("text");
+                var y = document.getElementsByTagName("div")[2];
+                x = y;
+
+                x.remove(y);
+            });
+        }
+
+        // function add() {
+        //     var newE = document.createElement("div");
+        //     var newT = document.createTextNode("Day la the a");
+        //     newE.appendChild(newT);
+        //     var x = document.getElementById("text");
+        //     x.appendChild(newE);
+        // }
+
+        function remove(a) {
+            var x = document.getElementById("text");
+            var y = document.getElementsByTagName("div")[2];
+            x = y;
+
+            x.remove(y);
+            // console.log(x)
+
+
+        }
+    </script>
+</body>
+
+</html>

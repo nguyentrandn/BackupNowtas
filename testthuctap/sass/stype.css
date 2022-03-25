@@ -1,0 +1,35 @@
+html {
+  font-size: 62.4%;
+}
+
+h1 {
+  color: #fff;
+}
+
+p {
+  color: red;
+}
+
+.header {
+  position: relative;
+  padding: 2rem;
+  background-color: yellow;
+}
+.header_menu {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}
+.header_menu:hover {
+  background-color: aqua;
+}
+.header_menu-item {
+  color: red;
+}
+@media screen and (max-width: 1024px) {
+  .header {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=stype.css.map */

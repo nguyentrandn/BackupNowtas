@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div style="align-items: center; justify-content: center; display: flex;">
+        <ul>
+            
+            <li>after()- Chèn nội dung sau các phần tử đã chọn</li>
+            <li>before()- Chèn nội dung trước các phần tử đã chọn</li>
+        </ul>
+    </div>
+    <input type="button" class="append" value="add 1 Element in LastList">
+    <input type="button" class="prepend" value="add 1 Element in FirstList">
+
+    <script>
+        $(document).ready(function(){
+            $(".append").click(function(){
+                $("ul").append("<li>append()- Chèn nội dung vào cuối các phần tử đã chọn</li>")
+            });
+            $(".prepend").click(function(){
+                $("ul").prepend("<li>prepend()- Chèn nội dung vào đầu các phần tử đã chọn</li>");
+            });
+        })
+    </script>
+</body>
+</html>

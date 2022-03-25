@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <!--    Header  -->
+    <!-- <script type="text/javascript" src="/js/header.js"></script> -->
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/US10.css">
+
+    <!-- <div file="/header.html"></div> -->
+    <!--#include file="include_head.html" -->
+    <!-- <include src="header.html"></include> -->
+    <!-- <iframe src="./header.html"></iframe> -->
+    <form onsubmit="return false">
+        <div class="container">
+            <div class="row mb-3 p-5">
+                <div class="col-lg-6">
+                    <div class="row pb-4">
+                        <label for="inputEmail3" class="col-lg-3 col-form-label px-0">お名前</label>
+                        <div class="col-lg-8 px-0">
+                            <input type="email" class=" form-control" placeholder="氏名またはメールアドレスまたは電話番号を入力" id="email" name="氏名またはメールアドレスまたは電話番号を入力">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col col-lg-3 px-0 py-2">
+                                    <label for="inputState" class="form-label ">本人確認</label>
+                                </div>
+                                <div class="col-lg-8 px-0">
+                                    <div class="row pt-2 checker" id="checker">
+                                        <div class="col col-lg-4 "><input type="radio" value="0" name="check" id="NotYet">
+                                            <label for="NotYet" class="ps-2">未</label>
+                                        </div>
+                                        <div class="col col-lg-6"><input type="radio" value="1" name="check" id="Already">
+                                            <label for="Already" class="ps-2">済</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" onclick="date()">
+                    <div class="row p-lg-0">
+                        <div class="col col-lg-3 pt-2 ps-4">募集期間</div>
+                        <div class="col col-lg-4 px-0">
+                            <input class="form-control " placeholder="🗓&emsp; 数字を入力" id="txtfrom">
+                        </div>
+                        <div class="col col-lg-1 px-0 ps-4 pt-2  ">~</div>
+                        <div class="col col-lg-4 px-0">
+                            <input class="form-control" placeholder="🗓&emsp; 数字を入力" id="txtto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <div class="col  col-lg-2 ps-5 btn-brown"> <button class="" name="クリア" id="delete">クリア</button></div>
+                <div class="col col-lg-2 pe-5 btn-red"><button type="submit" onclick=" getdulieu()" name="検索" id="search">検索</button></div>
+            </div>
+            <div class="row justify-content-end button-print pt-lg-5">
+                <!-- <div class="col col-lg-2"><button>新規作成</button></div> -->
+                <div class="col col-lg-2 pe-5"><button name="CSVダウンロード" id="print">CSVダウンロード</button></div>
+            </div>
+            <div class="row pt-4 tb">
+                <table class="table table-bordered">
+                    <tr>
+                        <th class="name">お名前</th>
+                        <th class="tt">固定電話番号
+                        </th>
+                        <th class="time">携帯電話番号</th>
+                        <th class="tbdate">本人確認日</th>
+                        <th class="sl">登録日
+                        </th>
+                        <th class="money">申込数合計</th>
+                        <th class="option">投資数合計
+                        </th>
+                    </tr>
+                    <tr onclick="location.href='./US30_顧客情報.html'">
+                        <td>吉田 優子</td>
+                        <td>0480-11-111</td>
+                        <td>090-1111-2222
+                        </td>
+                        <td>-</td>
+                        <td>2021/10/23
+                        </td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>伊藤 幸子</td>
+                        <td>0480-11-111</td>
+                        <td>090-1111-2222
+                        </td>
+                        <td>2021/10/23</td>
+                        <td>2021/10/23
+                        </td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>吉田 優子</td>
+                        <td>0480-11-111</td>
+                        <td>090-1111-2222
+                        </td>
+                        <td>-</td>
+                        <td>2021/10/23
+                        </td>
+                        <td>0</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>伊藤 幸子</td>
+                        <td>0480-11-111</td>
+                        <td>090-1111-2222
+                        </td>
+                        <td>2021/10/23</td>
+                        <td>2021/10/23
+                        </td>
+                        <td>6</td>
+                        <td>4</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </form>
+
+</body>
+
+</html>

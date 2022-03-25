@@ -1,0 +1,1 @@
+s-cart-light is template default for S-Cart 6.x

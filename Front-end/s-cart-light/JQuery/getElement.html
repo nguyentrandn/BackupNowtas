@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>hello <b>jQuery</b>!</p><input type="button" id="text" value="show Text">
+    <input type="button" id="html" value="show HTML">
+    <br>
+    <br> 
+    <input type="text" name="" id="input"> <a href="youtube.com">YOUTUBE</a>
+    <br>
+    <input type="button" id="value" value="show Value">
+    <input type="button" id="attribute" value="show Attribute">
+
+    <script>
+        $(document).ready(function(){
+            // Show content trong thẻ <p>
+            $("#text").click(function(){
+                alert( $("p").text());
+            });
+            // show tất cả Element có trong thẻ <p>
+            $("#html").click(function(){
+                alert($("p").html());
+            })
+            // lay value cua input
+            $("#value").click(function(){
+                alert($("#input").val());
+            })
+            // 
+            $("#attribute").click(function(){
+                alert($("a").attr("href"));
+            })
+        })
+    </script>
+</body>
+</html>

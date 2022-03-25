@@ -1,0 +1,962 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="./css/style.css" rel="stylesheet">
+
+    <title>Matching System</title>
+</head>
+<body>
+
+<header class="header header_sf">
+    <div class="container">
+        <div class="header-box">
+            <div class="head-title">さがす</div>
+            <span class="btn-search" data-bs-toggle="modal" data-bs-target="#menuModal">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12C12.2091 12 14 10.2091 14 8C14 5.79086 12.2091 4 10 4C7.79086 4 6 5.79086 6 8C6 10.2091 7.79086 12 10 12Z" fill="#333434"/>
+                    <path d="M10.35 14.0086C7.62 13.9086 2 15.2686 2 17.9986V18.9986C2 19.5486 2.45 19.9986 3 19.9986H11.54C9.07 17.2386 10.31 14.1086 10.35 14.0086ZM19.43 18.0186C19.9 17.2186 20.13 16.2486 19.91 15.1986C19.57 13.5586 18.19 12.2486 16.53 12.0386C13.9 11.6986 11.68 13.9086 12.03 16.5386C12.25 18.1986 13.55 19.5786 15.19 19.9186C16.24 20.1386 17.21 19.9086 18.01 19.4386L19.87 21.2986C20.057 21.4855 20.3106 21.5906 20.575 21.5906C20.8394 21.5906 21.093 21.4855 21.28 21.2986C21.467 21.1116 21.572 20.858 21.572 20.5936C21.572 20.3291 21.467 20.0755 21.28 19.8886L19.43 18.0186ZM16 17.9986C14.9 17.9986 14 17.0986 14 15.9986C14 14.8986 14.9 13.9986 16 13.9986C17.1 13.9986 18 14.8986 18 15.9986C18 17.0986 17.1 17.9986 16 17.9986Z" fill="#333434"/>
+                </svg>
+            </span>
+        </div>
+    </div>
+    <ul class="home-tab">
+        <li><a href="#" class="active">おすすめ</a></li>
+        <li><a href="#">人気上昇中</a></li>
+        <li><a href="#">新着順</a></li>
+    </ul>
+</header>
+
+<section class="block_sf">
+    <div class="user-box">
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.istockphoto.com/photos/portrait-of-a-mid-adult-male-picture-id936928380?k=20&m=936928380&s=612x612&w=0&h=uISC0NaW9HyTbvpy--eFr-INm9rfwfnJhcoIY49rijQ=" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.istockphoto.com/photos/japanese-man-looking-at-camera-picture-id591404436?k=20&m=591404436&s=612x612&w=0&h=028r-tf3xg8aUeTj4HV0S7pr09zmyAO2IiA8ERWNjYk=" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://images.unsplash.com/photo-1598273542724-f8d6723b0ed9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW5lc2UlMjBtYW58ZW58MHx8MHx8&w=1000&q=80" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_936_36303)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_936_36303" x1="1.78568" y1="9.1819" x2="12.3034" y2="4.58594" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#D7AF7C"/>
+                                        <stop offset="0.393592" stop-color="#EACDA3"/>
+                                        <stop offset="1" stop-color="#D6AE7B"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.istockphoto.com/photos/japanese-male-businessman-working-from-home-in-plain-clothes-picture-id1275712505?k=20&m=1275712505&s=612x612&w=0&h=ryR0-92Hwgb-vP_oTEECysmquf7Tk1omPVKbh5-z8zw=" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://www.thejapanguy.com/wp-content/uploads/2017/04/AsianFacesQuiz-WangLeeHom-CHINESE.jpg" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_936_36303)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_936_36303" x1="1.78568" y1="9.1819" x2="12.3034" y2="4.58594" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#D7AF7C"/>
+                                        <stop offset="0.393592" stop-color="#EACDA3"/>
+                                        <stop offset="1" stop-color="#D6AE7B"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://qph.fs.quoracdn.net/main-qimg-6cdacca8b9af4283eac60abbc764faf7.webp" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="block_category">
+    <div class="title">人気の条件</div>
+    <div class="category-list">
+        <div class="item" style="background: url('./img/no_smoking_bg.jpg') no-repeat;">
+            <img class="img" alt="" src="./img/no_smoking.jpg"/>
+            <label>喫煙しない</label>
+        </div>
+        <div class="item" style="background: url('./img/beer_bg.jpg') no-repeat;">
+            <img class="img" alt="" src="./img/beer.jpg"/>
+            <label>適度な飲酒量</label>
+        </div>
+        <div class="item" style="background: url('./img/meditation_bg.jpg') no-repeat;">
+            <img class="img" alt="" src="./img/meditation.jpg"/>
+            <label>定期的に運動する</label>
+        </div>
+        <div class="item" style="background: url('./img/economy_bg.jpg') no-repeat;">
+            <img class="img" alt="" src="./img/economy.jpg"/>
+            <label>高年収</label>
+        </div>
+    </div>
+</section>
+
+<section class="block_sf sf_02">
+    <div class="user-box">
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.istockphoto.com/photos/portrait-of-a-mid-adult-male-picture-id936928380?k=20&m=936928380&s=612x612&w=0&h=uISC0NaW9HyTbvpy--eFr-INm9rfwfnJhcoIY49rijQ=" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.istockphoto.com/photos/japanese-man-looking-at-camera-picture-id591404436?k=20&m=591404436&s=612x612&w=0&h=028r-tf3xg8aUeTj4HV0S7pr09zmyAO2IiA8ERWNjYk=" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="banner banner_01">
+                <div class="text">
+                    <div class="text_1">自己紹介を入力で</div>
+                    <div class="text_2">マッチ率UP！</div>
+                </div>
+                <span class="btn btn-white">入力する</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://images.unsplash.com/photo-1598273542724-f8d6723b0ed9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8amFwYW5lc2UlMjBtYW58ZW58MHx8MHx8&w=1000&q=80" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_936_36303)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_936_36303" x1="1.78568" y1="9.1819" x2="12.3034" y2="4.58594" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#D7AF7C"/>
+                                        <stop offset="0.393592" stop-color="#EACDA3"/>
+                                        <stop offset="1" stop-color="#D6AE7B"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.istockphoto.com/photos/japanese-male-businessman-working-from-home-in-plain-clothes-picture-id1275712505?k=20&m=1275712505&s=612x612&w=0&h=ryR0-92Hwgb-vP_oTEECysmquf7Tk1omPVKbh5-z8zw=" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://www.thejapanguy.com/wp-content/uploads/2017/04/AsianFacesQuiz-WangLeeHom-CHINESE.jpg" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_936_36303)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_936_36303" x1="1.78568" y1="9.1819" x2="12.3034" y2="4.58594" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#D7AF7C"/>
+                                        <stop offset="0.393592" stop-color="#EACDA3"/>
+                                        <stop offset="1" stop-color="#D6AE7B"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="banner banner_02">
+                <div class="text">
+                    <div class="text_1">キャンペーン</div>
+                    <div class="text_2">キャンペーン</div>
+                </div>
+                <span class="btn btn-white">テキスト</span>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://qph.fs.quoracdn.net/main-qimg-6cdacca8b9af4283eac60abbc764faf7.webp" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://media.gq.com/photos/56d63b5bbeb4a66323eb912f/16:9/w_2560%2Cc_limit/japanese-porn-star.jpg" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://www.thejapanguy.com/wp-content/uploads/2017/04/AsianFacesQuiz-Men1-KOREAN.jpg" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://aramajapan.com/wp-content/uploads/2017/12/aramajapan.com-dean-fujioka999.jpg" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="thumb">
+                <img class="img" src="https://static.reuters.com/resources/r/?m=02&d=20120509&t=2&i=605032353&r=CBRE8481KAQ00&w=800" alt="">
+                <span class="more">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.5565 9.28872C14.2683 9.28872 14.8454 8.71166 14.8454 7.99983C14.8454 7.28799 14.2683 6.71094 13.5565 6.71094C12.8446 6.71094 12.2676 7.28799 12.2676 7.99983C12.2676 8.71166 12.8446 9.28872 13.5565 9.28872Z" fill="white"/>
+                        <path d="M7.86702 9.28872C8.57885 9.28872 9.15591 8.71166 9.15591 7.99983C9.15591 7.28799 8.57885 6.71094 7.86702 6.71094C7.15518 6.71094 6.57812 7.28799 6.57812 7.99983C6.57812 8.71166 7.15518 9.28872 7.86702 9.28872Z" fill="white"/>
+                        <path d="M2.17756 9.28872C2.88939 9.28872 3.46645 8.71166 3.46645 7.99983C3.46645 7.28799 2.88939 6.71094 2.17756 6.71094C1.46573 6.71094 0.888672 7.28799 0.888672 7.99983C0.888672 8.71166 1.46573 9.28872 2.17756 9.28872Z" fill="white"/>
+                    </svg>
+                </span>
+                <div class="info-box">
+                    <div class="name-box">
+                        <div class="name">Name</div>
+                        <span class="badge">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.00033 1.16797C3.77449 1.16797 1.16699 3.77547 1.16699 7.0013C1.16699 10.2271 3.77449 12.8346 7.00033 12.8346C10.2262 12.8346 12.8337 10.2271 12.8337 7.0013C12.8337 3.77547 10.2262 1.16797 7.00033 1.16797Z" fill="url(#paint0_linear_1736_2172)"/>
+                                <defs>
+                                    <linearGradient id="paint0_linear_1736_2172" x1="2.5" y1="10" x2="12" y2="4.5" gradientUnits="userSpaceOnUse">
+                                        <stop stop-color="#EDF1F2"/>
+                                        <stop offset="0.447736" stop-color="#D5E0E9"/>
+                                        <stop offset="1" stop-color="#EEF2F3"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+                        </span>
+                    </div>
+                    <div class="img-info">
+                        <div class="age">28歳 東京</div>
+                        <div class="img-badge">
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 2.5V8.5H4V2.5H10ZM10 1.5H4C3.45 1.5 3 1.95 3 2.5V8.5C3 9.05 3.45 9.5 4 9.5H10C10.55 9.5 11 9.05 11 8.5V2.5C11 1.95 10.55 1.5 10 1.5ZM5.75 6.335L6.595 7.465L7.835 5.915L9.5 8H4.5L5.75 6.335ZM1 3.5V10.5C1 11.05 1.45 11.5 2 11.5H9V10.5H2V3.5H1Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                            <div class="badge-item">
+                                <i class="icon">
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4.0365 6.59894L2.106 4.66844C1.346 5.49694 1.058 6.32694 1.053 6.34394L1 6.50194L1.0525 6.65994C1.0635 6.69344 2.2105 10.0019 6.027 10.0019C6.4915 10.0019 6.9145 9.95094 7.303 9.86544L5.93 8.49244C5.43564 8.4682 4.96798 8.26093 4.61799 7.91095C4.26801 7.56096 4.06073 7.0933 4.0365 6.59894ZM6.027 3.00194C5.0995 3.00194 4.3395 3.20394 3.706 3.50094L1.8535 1.64844L1.1465 2.35544L10.1465 11.3554L10.8535 10.6484L9.2045 8.99944C10.5235 8.02294 10.994 6.68094 11.001 6.65994L11.0535 6.50194L11.001 6.34394C10.99 6.31044 9.8435 3.00194 6.027 3.00194ZM6.98 6.77494C7.0735 6.43644 6.994 6.05544 6.734 5.79494C6.474 5.53444 6.0925 5.45544 5.754 5.54894L5 4.79494C5.30898 4.60493 5.66427 4.50357 6.027 4.50194C7.13 4.50194 8.027 5.39894 8.027 6.50194C8.02552 6.8646 7.92395 7.21981 7.7335 7.52844L6.98 6.77494Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="match-point">共通点 <strong>4</strong> 個</div>
+                <p class="desc">お会いする前に電話したい派です！</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="loading">
+        <img src="./img/loading.svg"/>
+    </div>
+</section>
+
+<nav class="navigation">
+    <ul>
+        <li>
+            <a href="#" class="active">
+                <i class="icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="26" height="26" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1811_8292" transform="scale(0.02)"/>
+                            </pattern>
+                            <image id="image0_1811_8292" width="50" height="50" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAAFTklEQVRoge2ZT2wUVRzHv783u53KbrfbYK2QcCEipCEmSBoNRDqt63ZXbfDgmkC4oAfjwQMJF/EgJGBC4oFo0kDCTRM0TSQNQem2wFg8gUD8kxijBozQWKi0HXZtu7szPw/tzk7XmXbf2yY22s/p/d6f3+/33Zn3Z94Cq6yyyv8CqtdBNGlsJSAFwk6A2wFqBdACIA/GJAT/BEdcF0zDU0XnEkyzVH/a/0RNiGGEYjrvcUAHCNgmMXKMgNPcgBMPz5njSrEDkBYSTXd1kuP0AdSuHpYtAr1nxVo/Qn+/re6nQu1CMhktZt0/wuB3ABJVrSUQj4DpJjHfBYkxB9wiQG0AP8lAEnOvWzWXHQ1781+Yf9QjAqhVSCbTELPGP2FwpqrlFgjHiPWz1uDgg8Dx27eHI482dRJwkICeah/kOD3W0MjPcqkvZGkhmYwWs8bPLBDBmCbCISvW2of+/oJMwGiyu5vI6QOw2ZPE70WBHdNfmndkfHlZUkisxzjKwLuVGh4lwivWha+uqQaNG0bc1nEGQMr1CtzMzWIHTHNGxae2WGM03dUJ5tMAzQvm0RLzs/nBkR9VgpWZuX17pvB0x6d64a92AO0AQMA6PcRrCr/+llXxGfxEDCPUpPO37urEmCbBnfU8iWrakslIngpXPEt4ySFte/7Cxe9kfVWvPi4xnfd4l1giHFpOEQAwls3mBfAawOV5FhJsH1HxFSjEAR3wmLesWGufSoClsAbNX5jEKU/V7uZEYqOsH18h88eOyo5NOCa7OknhhI8CKJaj2Zq9T9aFrxASnPaYJaGVPldIr2Zy2ew9Bkw3Pji1WH8//F8tpp1umXhk6vzXEyoJSjLgKXcgndZlBgfNkS2VIt2Qz0keIXDdY4ai9vQmqfH+1byuXCKHR5Uyk0QrhhbE0Tw51EKAEIpUetB9hbykmQiHx7y2482hBnyFMHjW4zCmlpockUIhviAHgUmZ8f6rFsg9yQpH7hErI+yFcVjuTQia7N4j9ROSKSlBGnsnN2uhotTcDFp+v6kUkUIm06CWXu0Q4+VKfPwgu+T7ChFMwx4zHrHu71JLr0YMIwTQS65NPCTrwlfIVNG5BMBdRQg4qJJfrTTpvB/A2rLNrA0s0t0X/1fLNEsEnC6bBPREk93dKkkuxfre3jUADldq+Goue2lE1k/g6ZcbcAJgq2wTOX1xw4gH9VclV8h9ANB6Ny6J4yp+AoU8PGeOE3t/KWwuNfJnc+/z8tCU7HqdwW+VbQaGchcun1XxFSgEAKzmxz4EcLlsE1OyqRFn2pJJqV3Xj2jKeBPEJz1VE3ZY7AfAKv4WFYL+ftvRsBfALbeO8WqeCldiPYbS/rK+t3dNrKerjxgnAYQ9TXf1nJNX8QnUeK8Ve2HXJghxkYENlVouMIlTcMJHc9nsvSWdzN0B7Adw2DsnqrimzSI5aZpSxxNA4qbxkeSuDRqJAZ+73uL8R9EAEd8oOXxnurltLPLgQQvCaCN2thDxi5jb8NZWjZ0AcBfA1nrFyN39GkZjUyO9D+a3AdQ16RkYtMPiDT3n5G0dWQAdnmZpMUq38ZHU80/N33bslvfBV5nE8fnViQH3wq4uMXX9P9KcSGy0NXvf/Dd2B4KeEuN7EA8xawNBm129Yur+o8clndaj9vQmJjxOjDiI/wTEPS1UHK31AFiPmOUTsky0JBLNJa00COCZch0DNwX0xGI3/itOCKAmZkUKAeTFLL6z/4tMDA9PabNIAXDvmwnYxjzzsV//FSsEACZNc1KbRRIeMSB6zq/vihYCLBBzHsAkiA4vNWaVVVb5D/M3ddP9rAHnrvAAAAAASUVORK5CYII="/>
+                        </defs>
+                    </svg>
+                </i>
+                <span>さがす</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="26" height="26" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1811_8297" transform="scale(0.01)"/>
+                            </pattern>
+                            <image id="image0_1811_8297" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAFXElEQVR4Ae2dvascVRjGVwWxEcUvFMRGJSLiN1hEECzU0tZGEhX9A4xiJVcLjWKRQhJSiCJqsaVY3Hvnfd4D6y2s0qVIUkgwiCgx0UaIH1fecd7L7nVn7+zZMzNn9z6BHyd3P86cfX7nnZmd3Z0ZDPiPCTABJsAEmAATYAJMgAkwASbABJgAE2ACtQmEEO4zROTlipMichKAVnwPwPi14i8A4/jt/rjyedaHoaovVRxQ1QO1A+Ed/yVAIT3NhBDCPYaIvFdxVkTOAtjumDMAzvg4ANxt9BRLf4ulkP6yL5esqo8ZIvKNAeCfiq4rYubyRORvA8DXRlEUjxg9x5d+8RSSPtO5ehyNRrcaAD6vyLIiGmyvynGr6mdGCOEWY64wcngwheRgYTAYqOqzBoBfKmausxvM0Nye/zMA4xkjk9jrh0Eh9dl0eo+IvFnheym5zeyk4/G9MVV9w+g07CYLo5AmKXXwGFX9wFjCbUHSigHwvtFB5LMXQSE7h3r6FQLgrYrUM23Z+zsC4MjsadzCvRSyUxm7J1C3QkTkOSPXY1EZbMv8iEQ371MopLYyvFK6ESIiNxsAfqrwAbCd8hlOURQ/Guvr6zcZybcaFLJnZUxMzNaFqOrHRgbr6IkXvgTjOQbgWPIKoZD5KmRsoqQVUhTFXQaAPyuWbYb2Pd4rAK6EEO40Fq4UComuDJ8IaYXw0MjCQkox/q2WhSuEQjIRsr29fZUB4IcKL0G2U953jG3E6/I5D+C85zp3pfgTKSRNhZiMhYSIyINGA/N1M4K3T6mkEMIDxtwVQiHJKmNiYkYLAfBKxUSHrJiFRR0GcHjuCqGQhYOvm8jRQj4CYNR1zNsjshGRD42YCqGQiMD3msCLCPkUgMFKSJiBiHxixFQIhSQU4RN7ESFfATBYIWkzKHONqRAKSSvCJ3a0kBMADO+IbZosjgM4HlMhFJJGwO6JHCdEVd8xWCFp1xAi8rYxd4VQSFoRPrGjhYjI84Z3xDaNIM917grxJ1JEGhGeo+c6t5DRaHSH4b8U8g7ZxgnyHDc2Nm4zKKSdPabde1C1fy8sxA2q6rcGKyOuMsZy2wKw5blGtxSysAivmjRC+EFVMiGHAByKrgx/IoVkJmQ4HF5r8OtA0WIuALgQQrjO8Ike3VJItAjfdqQV4iZt/VfhC2LbYFdaVV80PMdkLYXEVUprQsa+WroJwGCFzM6gzMlzS1YZ3pF3XMmgkNkybLK2K8TFhBBuN7jXNX0N4T/29GOBnltrLYVMF+Gr8M6FuOkQwuOGiPxm+ID2cfs7AONRw3PqrKWQ/1VKv0Lc/NjpXy+KyMV9WCGXAFxS1YOG59JbSyHIS4jPBBG537DzqFes+vuUcwDO+Q+bPIdsWgrJRsXkQEIINxr+keWqbVNU9QujKIobjMlXn+FfFJKZlOFweI2xQpVxGsBpP3FbZnHvPRwK2TujTh/hq6wlrpDvABgvGGtra1cbnYaYcmEUkjLNBH0VRfGkkXGF+BXdTgE4JSLvGqr6kJEggry6oJC8fAz8HOgRFXIZwGURed1Q1ScMAE8bqvqq4f37dQkBfFlR/lRs7PajAI6KyGuG97O1tXW9kVls7Q3HA6OQ9jJu1LOfRtaO+M551Lc8JmRX3eSVNxtF3exBFNIsp9Yf5V+kG7s+YdOjvH6N2vKM2a0PdL8sgEIyMb25uXmvoarBaLARL6/i7Hs9S/8OOBMPO8OgkJ0o+v1PCOFhA8AfFXXbDL/eX/l+IPq3df2+3PyXTiGZOfJrwfpphuy8HYZfNk9VnzL8MHxmw1+94VDI6jnlK2ICTIAJMAEmwASYwOon8C/H9NTWWDbQcQAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>
+                </i>
+                <span>メッセージ</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="26" height="26" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1811_8302" transform="scale(0.01)"/>
+                            </pattern>
+                            <image id="image0_1811_8302" width="100" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAEyklEQVR4Ae2dT4gcRRTG4z8UT+olIniKCKIXxYOgHoKCILmLd0FRcgnqTdiL4sWDRryIVw8rhMCQYXf7fa/QPSXMRRAhniLJKQkBIRJQdOQNXToOW9Ove3pm3ux+Cx8duqtrqr7f+6Y627M9x47xhw7QATpAB+gAHaADdIAO0AE6QAdcDqSUnjGp6rsmAM+ZXCezUf8OEEj/nnbqMaX0ggnAH7XGAKY1ADDY2dl5xNTpRXiS3wEC8Xu1kpYAvq41nYqD/n0ZwGUmZclYCGTJBrftXkR+Ns2sGwclZLJPVb80tX0dtnc6QCBOo5bdLK8FAP6uVUzFTHpuAbi1vb19j2nZ4zwy/RNIMNQicso0U/3elIx3d3cfNwWb1uYOh0CCsVPVj01dE5JSesIUbFqbOxwCCcIupfSQSUR+MXVNyP7+/sOmINPa3GEQSBB2KaUHTAB+qOW+oppJ0U0AN4NMa3OHQSBB2G1tbd1tAvBdra7JyOcNAQyDTG/zhkEgwZgB+KJWrvCFtqr6gSnYNDdnOAQShJWqfmSauUJaKB3WV0rpeVOQaW7OMAgkCCsAb9VaOA0z6boC4Mp4PL7LFGS68YdBIEEYqeprJgB/1uo1ISLyiSnIdOMPg0B6YpRSetRUVdWzpuFweL/J2/1gMHjQBODXWr0mY2odOQ3gtIi8uiKdFJGTK7/vQiBFwKsBklK61yQi35imKjBX9g0AN1T1dVNTUlT1FdMB/eT+Dsv2EoBLqvq0qckX93EC+d8HudsUy3KAAHi/1tzBiMhvtY6LyPEScQDv1Jrb3yFK0HUA1/f29h4zlXxx7yeQzgnJBdc7kO8BmPILzN2KyBumEnERec/k7e+wtFPVz0wlX9z7axgE4izIUgH1CeQnAKa5ycjHcwJKxPPx3P4IbS8CuFjyxb2/hkEgzoKcU2AEMsccV9p7Pn/yTuNOQqkhE+J7q3bAIxCHSatMCoEQCDDOV1Glt8B8PJhZq0jK5BOYJV/c+7mG9LaGEEiwFJ4FcNadhFJDJqS3hBBIpISo6oumUuG79zMh/SSEQBb/VUdfV14jACN3ApoaMiELJ4RAIq0dAN40NRW++zgTsnBCCCRIQq4BuDYaje4zuRPQ1JAJ6ZwQAgmSjMnV2dL+cosJ6ZYQAonz/47bAG7nx0k1LQmtjzMhrRNCIJHWDhH53NS68r0nMCHtEkIgQdYOEfnLBOCEyVvwrdsxIb6EEEiQZEytX+cAnGtd8W1PYEJ8CTEYBBIoJSLysqltwbduz4T4EkIgcdLR7w2opsgwIY0JIZCpK5u+7nsv0k+/N6CYkMYENMHabCCH6K9wrwK42vsdwVUnhECaHG84DuDHWk3RnRwXkbdNpW7zEx+CrQOuuU2PWUQ+NJXmubT9BHLwGrNOIN8CMLmqqOkjk1MPSJ58CMDbb6B2k2e75EegLy0JpY5rGATyX0GuF0j+ilMR+d00p1IvALjgfcZhVVUvmfIzUub060rmCs6/A+BO/mKZUgEvfT+B/PtWHQNIJi4iT5oAfGUSkfO1zojIma7X4/m7oQB8WmvyrHZVrdYpEdkx5Qc7V1X1lCn7sfYtgQQDsvaK4ADoAB2gA3SADtABOkAH6AAdoAN0gA7QATpAB466A/8AIiMCsRp5cr4AAAAASUVORK5CYII="/>
+                        </defs>
+                    </svg>
+                </i>
+                <span>いいね</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <i class="icon">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <rect width="26" height="26" fill="url(#pattern0)"/>
+                        <defs>
+                            <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                <use xlink:href="#image0_1811_8307" transform="scale(0.0166667)"/>
+                            </pattern>
+                            <image id="image0_1811_8307" width="60" height="60" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAACC0lEQVRoBe2aMW4TQRSGrRRQhhJEnVwBToI4RMwZXCWNRcQ1fAAX3vfNSC5IqEA5ADQRUCVCQVCCnjUPbRKQZe9gj3feSp9WtrVv5///2dmZkQcDP9wBd8AdcAcqdGA6nT5UQgivFOA88R1oY98PgaFdt3OWWcN7Lxh4mvgAKL9WQUTeK1an+KStoUlsfwVbF15X6N1eYElb3eKStoZVI7g1OK30zN5N9i+fj4Cj4hKuTjDwLpE1YRE5U4pLuEbBN4CSNeFU86bEhKsTnDvZW/VKTPhWA3N37RIF/5cuLSLfFBe8bQdqfC1VN/FY7FjkHqx0Hl3kXFq3ZxK5R+syBdvy0NaxXZO2OpPJ5IGy7THq3v2rE2wO2BaPJbRq0q3rFntjVrfYc3WCLQl79myUtXWtrX5a57eAshic7DqrszNna7gJ6b3gnUnGG+oOuAPuQBUOjEajPSXG+FwBThIBUL4kfgJ/aJrms0I6RORYCSE8U6xucSZaw3oreD6fP1GA14mvgJJ7eWg9YwyMY4yPlY0n3nvBMcZHioi8UYAfidyJLqtn9z0FTpum2VeyJ16NYBE5VIBPiWUJbPT3EMJHZTabHSidk65OMHCR2Ghya4z2i38NdU64OsGtmVDpCV8Cl50Trk6wiLxUgOtEaUlfAVchhBdK54SrE9zZMS/gDrgD7oA74A64A/9y4De/Q3koop7GqAAAAABJRU5ErkJggg=="/>
+                        </defs>
+                    </svg>
+                </i>
+                <span>マイページ</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+
+<div class="offer-noti">
+    <a href="#" class="close">
+        <img src="./img/close.png" alt=""/>
+    </a>
+    <div class="head">
+        <img src="./img/warning.png" alt=""/>
+        <span>現在マッチングしにくい状態です</span>
+    </div>
+    <div class="info">
+        <p>自己紹介文が無いと、人柄が分からず、マッチング率が下がります。</p>
+        <a href="#" class="btn btn-pink">登録する</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

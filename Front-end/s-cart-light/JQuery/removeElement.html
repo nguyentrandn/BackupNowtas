@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <ul style="border: 1px solid red; height: 100px; overflow-y: scroll;">
+        <li id="demo">remove()- Loại bỏ phần tử đã chọn (và các phần tử con của nó)</li>
+        <li>empty()- Loại bỏ các phần tử con khỏi phần tử đã chọn</li>
+    </ul>
+    <input type="button" value="add()" id="add">
+    <input type="button" value="remove()" id="remove">
+    <input type="button" value="empty()" id="empty">
+    <script>
+        $(document).ready(function(){
+            $("#add").click(function(){
+                $("ul").append("<li>remove()- Loại bỏ phần tử đã chọn (và các phần tử con của nó)</li> <li>empty()- Loại bỏ các phần tử con khỏi phần tử đã chọn</li>");
+            })
+            // xoá Element ul
+            $("#remove").click(function(){
+                $("ul").remove();
+            });
+            // xoá các phần tử con(li) của ul có id là #demo
+            $("#empty").click(function(){
+                $("ul").empty("#demo");
+            });
+        })
+    </script>
+</body>
+</html>

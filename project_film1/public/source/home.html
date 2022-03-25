@@ -1,0 +1,325 @@
+<!doctype html>
+<html>
+	<head>
+		
+		<title> SS PHIM | Xem Phim Mới | Xem Phim Online | Full Hd-Vietsub </title>
+		
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        
+	<!-- favicon-->	
+	
+		<link rel="shortcut icon" type="image/png"  href="hinhanh/logoo.png">
+		
+		
+		
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<script src="https://code.jquery.com/jquery-latest.js"></script>
+	<!-- favicon-->
+  </style>
+  <script>
+	$(function(){
+	  /* cho box đầu tiên hiển thị */
+	  $('.box:eq(2)').hide();
+	  $('.tab-list li').click(function() {
+		/* loại bỏ class active của tất cả li */
+		$('.tab-list li').removeClass('active');
+		/* add class active của li được click */
+		$(this).addClass('active');
+		/* Xác định phần tử thứ n được click */
+		var n = $('.tab-list li').index(this);
+		/* Ẩn tất cả .box */
+		$('.box').hide();
+		/* Hiển thị .box theo phần tử thứ n */
+		$('.box:eq('+ n +')').fadeIn(300);
+	  });
+	});
+	</script>
+	</head>
+	<body>
+	
+<div class="top">
+	<header>
+		<div class="topleft">
+			<a href=""><img src="image/logo.png" alt="" height="60px"></a>
+		</div>
+		<div class="topright">
+			<ul>
+				<li><a id="page" href=""> Phim Lẻ </a></li>
+				<li><a id="page" href=""> Phim Bộ </a></li>
+				<li><a id="page" href=""> Phim Hoạt Hình </a></li>
+				<li><a id="page" href=""> Phim Chiếu Rạp </a></li>
+				<li class="hr-page"><a id="page" href=""> Phim Mới </a></li>		
+			</ul>
+		</div>
+	</header>
+</div>
+<div class='topmini'> 			
+    <div class="timkiem">						
+        <input type="text" name="" class="inputtimkiem" placeholder="Tìm Kiếm Trên SS Phim..."/></input>
+            <a class="nut">
+                <div class="tool">
+                    <button class="search" ><i class="fas fa-search"></i> </button>												                  
+               		<span class="tooltext tool-bottom">Tìm Kiếm</span>
+               </div>
+            </a>              
+    </div>
+		 
+</div>
+<div class="main">
+	<div class="mainn">
+		<div class="mainleft">
+			<h1 id=title1> Phim Bộ Mới</h1>	
+			<ul class="tab-list">
+				<li>Phim Chiếu Rạp</li>
+				<li>Phim Sắp Chiếu</li>
+				<li class="active">Tất Cả Phim</li>
+			</ul>	
+			<div class="tab-content">	
+				<div class="box">		
+					<div class="row">
+																		
+						<div class="item-header">
+							<a href="{{route('product',$new->id)}}"><img src="image/1.jpg" alt="" height="250px"></a>
+							<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+						</div>
+						<div class="item-body">
+							<p class="item-title">Trò Chơi Con Mực</p>																						
+						</div>
+						<div class="item-caption">								
+							<a class="beta-btn primary" href=''>Xem phim </a>								
+						</div>
+							
+					</div>
+					
+				</div>
+				<div class="box">		
+					
+					<div class="row">
+																		
+						<div class="item-header">
+							<a href="{{route('product',$new->id)}}"><img src="image/1.jpg" alt="" height="250px"></a>
+							<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+						</div>
+						<div class="item-body">
+							<p class="item-title">Trò Chơi Con Mực</p>																						
+						</div>
+						<div class="item-caption">								
+							<a class="beta-btn primary" href=''>Xem phim </a>								
+						</div>
+							
+					</div>		
+					
+				</div>
+				<div class="box">		
+					
+					<div class="row">
+																		
+						<div class="item-header">
+							<a href="{{route('product',$new->id)}}"><img src="image/1.jpg" alt="" height="250px"></a>
+							<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+						</div>
+						<div class="item-body">
+							<p class="item-title">Trò Chơi Con Mực</p>																						
+						</div>
+						<div class="item-caption">								
+							<a class="beta-btn primary" href=''>Xem phim </a>								
+						</div>
+							
+					</div>
+					
+				</div>	
+			</div>
+			<div class="content-le">
+				<h1 id=title1> Phim Lẻ Mới</h1>	
+					<div class="row">
+																		
+						<div class="item-header">
+							<a href="{{route('product',$new->id)}}"><img src="image/1.jpg" alt="" height="250px"></a>
+							<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+						</div>
+						<div class="item-body">
+							<p class="item-title">Trò Chơi Con Mực</p>																						
+						</div>
+						<div class="item-caption">								
+							<a class="beta-btn primary" href=''>Xem phim </a>								
+						</div>
+							
+					</div>
+									
+			</div>	
+			<div class="content-hoathinh">
+				<h1 id=title1> Phim Hoạt Hình</h1>	
+					<div class="row">
+																		
+						<div class="item-header">
+							<a href="{{route('product',$new->id)}}"><img src="image/1.jpg" alt="" height="250px"></a>
+							<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+						</div>
+						<div class="item-body">
+							<p class="item-title">Trò Chơi Con Mực</p>																						
+						</div>
+						<div class="item-caption">								
+							<a class="beta-btn primary" href=''>Xem phim </a>								
+						</div>
+							
+					</div>
+									
+			</div>	
+		</div>
+		<div class="mainright">
+			<h3 id=title1> Phim Bộ Hot</h3>	
+			<div class="right1-scroll">
+				
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em </a>
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+			</div><br>
+			<h3 id=title1> Phim lẻ Hot</h3>	
+			<div class="right2-scroll">
+				
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>
+											
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+				<div class="item-scroll">
+					<a class="image-scroll" href=""><img src="image/sr1.jpg" alt="" height="70px"></a>
+					<a class="icon1" href=""><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></a>
+							<a class="icon2" href=""><i class="fas fa-star"></i></a>
+					<div class="title-scroll">
+						<a id="title" href="">Sủng Ái Độc Quyền Dành Cho Em</a>					
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+	</div>	
+</div>
+
+	<div class='longga'>
+				
+		<a> Công ty TNHH Store<br><br><br>
+		Địa chỉ: k332/h202 Trường Chinh phường Hòa An quận Cẩm Lệ TP Đà Nẵng. Tổng đài hổ trợ 19001223 - Email:Long@hotro.store.vn<br><br>
+		Mã số doanh nghiệp: 0328946750 do Sở Kế Hoạch & Đầu Tư TP Đà Nẵng cấp lần đầu ngày 01/06/2016<br><br>
+		<i class="far fa-copyright"></i> 2016 - Bản quyền thuộc về Công Ty TNHH Store</a>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.js">
+</script>
+<script>
+	$(document).ready(function()	{
+		alert("Chào Mừng Ghé Thăm Đồ Án Của Lê Xuân Long ");
+	});
+</script>
+	</body>
+</html>

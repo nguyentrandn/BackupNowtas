@@ -1,0 +1,57 @@
+/*------------------------------------------------------------------
+    File Name: custom.css
+-------------------------------------------------------------------*/
+
+@font-face {
+    font-family: nunito;
+    src: url(./font/NunitoSans-Light.ttf);
+}
+
+* {
+    font-family: nunito;
+}
+
+.alert-success {
+    position: relative;
+    padding: 1.3rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    height: 55px;
+}
+
+.alert-danger {
+    position: relative;
+    padding: 1.3rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    height: 55px;
+}
+
+.btn-success {
+    height: 37px;
+    line-height: 20px;
+    margin-top: 535px;
+    margin-left: 483px;
+    position: absolute;
+}
+
+.alert-warning {
+    position: relative;
+    padding: 1.3rem 1.25rem;
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    height: 55px;
+}
+
+.th {
+    width: 50px;
+    overflow: hidden;
+}
+
+.table_row thead tr th {
+    padding: 14px 35px 14px;
+}
+
+
+/** ADD YOUR AWESOME CODES HERE **/

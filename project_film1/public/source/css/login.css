@@ -1,0 +1,412 @@
+.rowdk{
+    margin-left: 180px;
+    background-color: aliceblue;
+    width: 500px;
+    padding-left: 50px;
+	margin-top: 50px;
+	height: 600px;
+}
+.rowdn{
+    margin-left: 180px;
+    background-color: aliceblue;
+    width: 500px;
+    padding-left: 50px;
+	padding-top: 50px;
+	margin-top: 50px;
+}
+
+
+.row{
+    width: 1500px;
+    height: 600px;
+    padding-left: 350px;
+ }
+ .row2{
+    width: 1500px;
+    height: 600px;
+    padding-left: 350px;
+ }
+body{
+	font-family:Roboto, Helvetica, Arial, sans-serif;
+	font-size:12px;
+	background:#F2F2F2;
+	
+	
+	
+}
+
+
+
+
+ /*phần trên đầu*/
+.top{
+	height:100px;	
+	background-color: #0c2738;
+}
+header{
+	width: 1500px;
+	margin: auto;
+	top: 0;
+	left:0;	
+	padding:  10px 0;	
+}
+.topright hr{
+	color: #f1b722;
+}
+.hr-page
+{
+	
+	display:block;
+	position:relative;
+}
+.hr-page:before
+{
+	content:"";
+	width:65px;
+	height:3px;
+	background-color: #f1b722;
+	position:absolute;
+	margin-top: 86px;
+	
+	
+}
+
+.topleft{
+	width: 100px;
+	height: 80px;
+
+	float: left;
+}
+.topleft img{
+	padding-left: 200px;
+	padding-top: 30px;
+}
+
+.topright{
+width: 900px;
+height: 90px;
+float: right;
+padding-right: 80px;
+margin: 0 auto;
+
+
+}
+.topright ul li #page{
+	color:white;
+
+}
+
+.topright ul li{
+	color: #899ead;
+	float: right;
+	padding-right: 50px;
+	line-height: 100px;
+	font-family: Nunito,sans-serif;
+	list-style: none;
+	display: block;
+	cursor: pointer;
+}
+.topright ul li:hover{
+	color:white;
+	
+}
+.topright ul li a:hover{
+	text-decoration: none;	
+}
+hr{
+	margin: auto;
+	width:1300px;
+}
+/*phần tìm kiếm*/
+.timkiem {
+	
+	background:#EDEDED;
+	height:40px;
+	width:930px;
+	padding-bottom:10px;
+	top:20px;
+	margin-top:35px;
+    margin-left: 240px;
+	position:relative;
+	border-radius:3px;
+	margin: 0 auto;
+	
+	 
+}
+
+.inputtimkiem {
+	
+	border: none;
+	background: none;
+	outline: none;
+	float: left;
+	padding: 2px 30px;
+   
+	color: black;
+	font-size: 16px;
+	line-height: 35px;
+	width: 690px;
+	font-weight:normal;
+	position:absolute;
+   }
+   .nut {
+	float: right;
+	width: 60px;
+	height: 36px;
+   
+	background:#3898EC;
+	display: flex;
+	justify-content: center;
+	padding-bottom:7px;
+	padding-top:3px;
+	padding-right:10px;
+	margin-right:5px;
+   margin-top:2px;
+	cursor: pointer;
+	border-radius:3px;
+   }
+   .nut .search {
+	   FONT-SIZE:20PX;
+	   margin-top: -15px;
+	   color:white;
+	   background:none;
+	   border:none;
+	   width:60px;
+	   height:100%;
+	   text-align:center;
+	   outline:none;
+	   cursor: pointer;
+	   padding-left: 5px;
+	   margin-left: 10px;
+   }
+   .nut .search:focus {
+	   color: #fff;
+	 background-color: #3898EC;
+	 border-color: #3196ee;
+	 box-shadow: 0 0 0 0.2rem rgba(57, 145, 245, 0.5);
+	 border-radius:3px;
+	 
+   }
+
+   
+ .tool {
+            position: relative; 
+            display: inline-block;
+         
+
+            margin: auto;
+            width: 150px;
+            height: 35px;
+            line-height: 35px;
+            
+            display: block;
+            
+        }
+		.tool .tooltext {
+            visibility: hidden;
+            position: absolute;
+            width: 90px;
+            background-color: #a4b0be;
+            color: black;
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+		 .tool:hover .tooltext {
+            visibility: visible;
+            opacity: 1;
+        }
+		.tool-bottom {
+            top: 150%;
+            left: -15px;
+			
+        }
+       
+
+		.img{
+			width:1100px;
+			height:200px;
+			margin:-178px auto;
+		}
+
+
+
+#title{
+	
+	padding-top:3%;
+	position:relative;
+	padding-left:1%;	
+	width:100px;
+	
+}
+
+.topmini{
+	color:white;
+	font-family:Calibri;
+	height: 90px;
+	background-color: #081b27;
+	position:relative;
+	padding-left:80px;
+	font-size:15px;
+	
+}
+
+ .container { 
+	 margin-top: -35px;
+     width: 1000px;
+}
+
+
+/*phần chính*/
+.main{
+	height: auto;	
+	background-color: #081b27;
+}
+.main input[type=text]   {
+    width: 380px;
+}
+.main input[type=email] {
+    width: 380px;
+}
+.main input[type=password] {
+    width: 380px;
+}
+/*phần tab*/
+
+/*phân thanh cuộn*/
+.item-scroll{
+	margin-top: 10px;
+	padding-top: 10px;
+	
+}
+
+.right1-scroll{
+	height: 600px;
+	width:300px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+.right2-scroll{
+	height: 600px;
+	width:300px;
+	overflow: hidden;
+	overflow-y: scroll;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	background-color:#899ead;
+	border-radius: 40px;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #636e72;
+	border-radius: 40px;
+}
+ /*phần phim*/
+
+ /*phần footer*/
+
+
+ .footer{
+	text-align:center;	
+	
+	color: white;
+	clear: left;
+	
+}
+
+.footer a{
+	color:#636e72;
+	z-index: 2;
+	position: relative;
+}
+.header{
+	height:100px;	
+	width:1100px;
+	margin:180px auto;
+	font-family:Roboto, Helvetica, Arial, sans-serif;
+}
+
+.overlight{
+    background-color: #000000a1;
+	background-image: linear-gradient(180deg,rgb(18 26 32 / 36%) 14%,#081b2700);
+    height: 190px;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    left: 0;
+    margin: auto;
+    display: table;
+    top: 190px;
+}
+
+ 
+@media(min-width:200px){
+    .content{width:100% ;
+   margin: auto;
+    }
+}
+#toTop {
+    display: none;
+    text-decoration: none;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;  
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(82, 74, 74);
+	border-radius: 50%;
+    z-index: 2;
+	color: rgb(70, 62, 62);
+   
+}
+#toTop:hover, #toTop:focus{
+	background-color:rgb(70, 62, 62) ;
+	color:#ffffff;
+	border: 2px solid #fff;
+	outline: none;
+}
+ 
+ /* phần thông báo đăng ký */
+ .alert-success{
+	position:absolute;		
+	padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    height: 55px;
+   
+	margin-top: 583px;
+    margin-left: 216px;
+	 
+ }
+ .alert-danger{
+	position:absolute;		
+	padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    height: 55px;
+	margin-top: 583px;
+    margin-left: 216px;
+ }
+ .btn-success{
+	height: 37px;
+    line-height: 20px;
+	margin-top: 535px;
+    margin-left: 483px;
+    position: absolute;
+ }
+ .alert-warning{
+	position: absolute;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+	height: 55px;
+    margin-top: 400px;
+    margin-left: 525px;
+ }
+.info li a{
+	color:aliceblue
+}

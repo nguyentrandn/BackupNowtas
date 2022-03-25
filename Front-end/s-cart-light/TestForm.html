@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+
+</head>
+
+<body>
+    <label for="email">email</label>
+    <input type="email"  name="checked" id="email">
+
+    <br>
+    <label for="password">password</label>
+    <input type="password" name="" id="password">
+    <br>
+    <input id="btn" type="button" value="click me" disabled>
+    <button id="check" onclick="vali()">check</button>
+    <script>
+        function vali() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var btn = document.getElementById("btn");
+            console.log(email);
+            console.log(password);
+            if (email == "a" && password == "a") {
+                btn.disabled = "";
+                // alert("tk:" + email + "\n" + "mk:" + password);
+                $("#check").fadeOut();
+            } else {
+                alert("No!");
+            }
+        };
+        
+        
+        $("#btn").click(function(){
+            $("#email").attr("disabled", "disabled");
+            $("#email").css({"border": "none", "background": "#ffff"});
+            $("#btn").attr("disabled","disable");
+            $("#btn").val("no");
+            let myTime = setTimeout(myGreeting,4000);
+            $("#check").fadeIn(4000);
+            
+        });
+
+        function myGreeting(){
+            btn.disabled = "";
+            $("#btn").val("click me");
+            $("#email").css({"border": "none", "background": "#ffff"});
+        }
+    </script>
+</body>
+
+</html>

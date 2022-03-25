@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <style>
+        .backg{
+            width: 500px;
+            height: 100px;
+            position: absolute;
+            z-index: 0;
+            background-color: brown;
+            opacity: 0.1;
+        }
+        .p{
+            width: 100%;
+            z-index: 1;
+            display: block;
+            color: rgb(250, 0, 0);
+        }
+        .p.active{
+            /* display: none; */
+            opacity: 0;
+            transition: 1s;
+        }
+    </style>
+        <div id="cha" class="cha" style="width: 500px; height: 100px;">
+            <div id="o" class="backg p"></div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo autem. Non ad ex, eligendi nam sed, quia ducimus veritatis maxime placeat architecto amet aliquam ea, commodi expedita earum illo!</p>
+        </div>
+        <input id="re" type="button" value="remove Class">
+    <script>
+        $(document).ready(function(){
+            $("p").addClass("p")
+            
+            $("#re").click(function(){
+                $("#o").removeClass("backg p");
+                $("p").toggleClass("active");
+            })
+        })
+    </script>
+</body>
+</html>

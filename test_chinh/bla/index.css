@@ -1,0 +1,340 @@
+html,
+body {
+    font-family: Zen Maru Gothic;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0;
+    font-size: 0.875rem;
+    /* max-width: 1400px; */
+    /* position: relative; */
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.slide img {
+    /* background-position: center center;
+    background-size: cover; */
+    max-width: 100%;
+}
+
+.title {
+    position: absolute;
+    width: 100%;
+    font-size: 80px;
+    color: #ffffff;
+    /* text-align: center; */
+    top: 20%;
+    left: 10%;
+    transform: scale(0.4);
+}
+
+
+/* phan conten */
+
+.conten {
+    position: relative;
+    /* background-color: rgb(209, 245, 233); */
+    /* width: 100%; */
+    height: auto;
+    padding: 2% 5%;
+    max-width: 100%;
+}
+
+.news {
+    position: relative;
+    font-size: 0.875rem;
+    color: #7D7F83;
+    width: 50%;
+    margin-bottom: 2%;
+}
+
+.container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    width: 90%;
+    height: auto;
+    /* background-color: blueviolet; */
+}
+
+.container .item {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-gap: 13px;
+    row-gap: 5px;
+    /* background-color: cornsilk; */
+    width: 447px;
+    height: 135px;
+    border-bottom: 1px solid #F2F2F2;
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.itemimg {
+    width: 100%;
+    height: auto;
+    grid-row: 1 / 4;
+}
+
+.itemimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.itemtilte {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+.itemtype {
+    background-color: #0179C1;
+    width: 66px;
+    height: 20px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.itemdate {
+    width: 150px;
+}
+
+.itemdate img {
+    display: inline;
+    padding-right: 5px;
+    width: 13px;
+    height: 14px;
+}
+
+.itemdate p {
+    font-style: normal;
+    display: inline;
+    font-size: 0.875rem;
+    line-height: 20px;
+    font-weight: normal;
+    color: #585F5B;
+}
+
+.container .item_year {
+    width: 287px;
+    grid-column-start: 3;
+    grid-row: 1 / 7;
+    /* background-color: darkgrey ; */
+    height: 274px;
+    border: 1px solid #ACD1F3;
+}
+
+.item_year .year_head {
+    position: relative;
+    background: #E6F2F9;
+    width: 100%;
+    height: 54px;
+    text-align: center;
+}
+
+.year_head p {
+    position: absolute;
+    left: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.year_body {
+    /* position: relative; */
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 0px;
+    padding: 5%;
+    overflow: hidden;
+    height: 200px;
+}
+
+.year_body .check {
+    width: auto;
+    height: 15px;
+}
+
+.year_body input {
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
+}
+
+.year_body p {
+    margin-bottom: 0;
+    display: inline;
+    font-size: 0.875rem;
+    margin-top: 1px;
+    width: 50px;
+    float: right;
+    margin-right: 180px;
+}
+
+.changepage {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    /* background-color: aquamarine; */
+    margin-left: 5%;
+    /* text-align: center; */
+    /* transform: translate(-50%, -50%); */
+}
+
+.changepage .item {
+    padding-top: 10px;
+    text-align: center;
+    margin: 4px;
+    width: 32px;
+    height: 18px;
+    border-radius: 3px;
+    border: 1px solid #D6D6D6;
+}
+
+.changepage .item:nth-child(1) {
+    margin: 4px 16px;
+}
+
+.changepage .item:nth-child(2) {
+    background: #0179C1;
+    color: #fff;
+}
+
+.changepage .item:nth-child(6) {
+    width: 40px;
+}
+
+.changepage .item:nth-child(7) {
+    margin: 4px 16px;
+}
+
+.mobi-change {
+    display: none;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 1141px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        /* transform: translate(10%); */
+        left: 0%;
+    }
+    .title {
+        top: 0%;
+        width: 100%;
+        font-size: 40px;
+        transform: scale(0.4);
+    }
+    .news {
+        margin-left: 10%;
+    }
+    .container {
+        display: table;
+        transform: translate(0);
+        margin-left: 10%;
+    }
+    .item_year {
+        margin-top: 10px;
+    }
+    .changepage {
+        display: none;
+    }
+}
+
+@media (max-width: 555px) {
+    .container {
+        margin-left: 0;
+    }
+}
+
+@media only screen and ( max-width: 486px) {
+    body {
+        position: relative;
+    }
+    .title {
+        top: 30%;
+        width: 100%;
+        font-size: 30px;
+        /* transform: translate( -30%, -50%); */
+        transform: scale(0.4);
+    }
+    .title p {
+        /* border: 5px solid #FFFFFF; */
+    }
+    .slide img {
+        height: 230px;
+    }
+    .news {
+        font-size: 0.875rem;
+        margin-bottom: 5%;
+        margin-left: 0%;
+    }
+    .container {
+        display: table;
+        transform: translate(0);
+        margin-left: 0%;
+    }
+    .container .item {
+        /* grid-template-columns: 20% 80%; */
+        grid-gap: 5px;
+        width: 30%;
+        height: auto;
+        left: 0;
+        margin: 20px 0;
+        column-gap: 10px;
+    }
+    .itemimg {
+        max-width: 170px;
+        height: auto;
+        margin-left: 0;
+        margin-right: auto;
+    }
+    .itemtilte {
+        font-size: 0.875rem;
+        width: 100%;
+        margin-left: 0;
+    }
+    .item_year {
+        width: 100%;
+        margin-top: 100px;
+    }
+    .changepage {
+        display: none;
+    }
+    .mobi-change {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        /* margin-top: -50px; */
+        /* margin-left: 5%; */
+        margin-bottom: 0%;
+    }
+    .mobi-change .item {
+        border: 1px solid #0179C1;
+        padding: 12px;
+        padding-left: 20px;
+        margin-left: 10px;
+        font-size: 16px;
+        align-items: center;
+    }
+    .mobi-change .item:nth-child(1) {
+        background-color: #0179C1;
+        color: #ffff;
+    }
+}

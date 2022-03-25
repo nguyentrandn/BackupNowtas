@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <p>hello <b>jQuery</b>!</p><input type="button" id="text" value="show Text">
+    <input type="button" id="html" value=" HTML">
+    <br>
+    <hr>
+    <input type="text" name="" id="input"> <a href="youtube.com">YOUTUBE</a>
+    <br>
+    <input type="button" id="value" value=" Value">
+    <input type="button" id="attribute" value=" Attribute">
+
+    <script>
+        $(document).ready(function(){
+            // thay doi Content trong the p
+            $("#text").click(function(){
+                $("p").text("thay doi Content trong the p");
+            });
+            // show tất cả Element có trong thẻ <p>
+            $("#html").click(function(){
+               $("p").html("<i>thay doi Element</i>");
+            })
+            // lay value cua input
+            $("#value").click(function(){
+                $("#input").val("thay doi Value");
+            })
+            // thay đổi href của thẻ <a>
+            $("#attribute").click(function(){
+                // thay doi Attribute
+                $("a").attr("href" ,"facebook.com");
+                alert($("a").attr("href"));
+                // This là #attribute
+                $(this).attr("disabled", "disabled");
+                console.log(this);
+            });
+            // Thêm 1 đường dẫn vào href.
+            // $("#attribute").click(function(){
+            //     $("a").attr("href", function(i, origValue){
+            //     return origValue + "/jquery/"; 
+            //     console.log(origValue);
+            //     $(this).disabled = "disabled"
+            //     });
+            // }); 
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="US30_顧客情報.css">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- JavaScrip -->
+    <script src="/admin/Js/admin.js"></script>
+</head>
+
+<body>
+    <div class="row-top">
+        <div class="header">
+            <div class="top-left">
+                <div class="logo">
+                    <p>ロゴ</p>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="admin">
+                    <ul>
+                        <li><img src="" alt=""></li>
+                        <li class="admin-text">
+                            <p>藤田 田
+                            </p>
+                        </li>
+                        <li class="admin-text"><svg width="10" height="9" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.5 12L0.00480938 0.75L12.9952 0.75L6.5 12Z" fill="black"/>
+                            </svg></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid px-0 container-main" onclick="menu()">
+        <div class="container-main-item">
+            <div class="menu">
+                <img class="close-img" id="btn_close" src="/img/close.svg" alt="">
+                <div class="open-img"><i id="btn_open" class="fas fa-bars"></i> <i class="far fa-chevron-right"></i></div>
+                <ul class="item-menu">
+                    <li id="color-itemmenu">
+                        <a href="/admin/US/US10_顧客一覧.html"> 顧客情報 </a>
+                        <span class="tooltip">
+                            顧客情報
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/admin/FD/FD10_ファンド一覧.html"> ファンド</a>
+                        <span class="tooltip">
+                            ファンド
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/admin/NE/NE10_お知らせ一覧.html"> お知らせ</a>
+                        <span class="tooltip">
+                            お知らせ
+                        </span>
+                    </li>
+                    <li>
+                        <a href="/admin/AC/AC10_Admin.html"> アカウント管理</a>
+                        <span class="tooltip">
+                            アカウント管理
+                        </span>
+                    </li>
+                    <li>
+                        <a href=""> ログアウト</a>
+                        <span class="tooltip">
+                            ログアウト
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="conten">
+                <div class="row pt-3 chtrang">
+                    <p><a href="US10_顧客一覧.html">ファンド一覧</a> > <a href="" class="ps-0">アカウント編集</a></p>
+                </div>
+                <div class="title-top-conten">
+                    <div class="title-recruitment">
+                        <ul class="information pt-3">
+                            <li class=""><img src="/img/user.svg" alt="">&emsp;伊藤 裕子（イトウユウコ）</li>
+                            <li><img src="/img/telephone.svg" alt="">048-222-222</li>
+                            <li><img src="/img/phone.svg" alt="">090-1111-2222</li>
+                        </ul>
+                    </div>
+                    <div class="menu-conten">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                ファンド情報
+                            </a>
+                            </li>
+                            <li>
+                                <a href="" class="color-menu">
+                                    <p> 申込一覧</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="US40_顧客情報.html">
+                                    <p> 投資一覧 </p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="US50_顧客情報.html">
+                                    <p> メッセージ</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <form name="myform" onsubmit="return false ">
+                    <div class="container">
+
+                        <div class="row pt-4 tb ">
+                            <table class="table table-bordered ">
+                                <tr>
+                                    <th class="pt-3 name ">抽選ステータス</th>
+                                    <th class="pt-3 tt ">申込日
+                                    </th>
+                                    <th class="pt-3 time ">ファンド名</th>
+                                    <th class="text-start tbdate ">申込金額 <br>（申込口数）
+                                    </th>
+                                    <th class="text-start sl ">当選金額 <br> （当選口数）
+                                    </th>
+                                    <th class="text-start pt-3 money ">抽選日</th>
+                                    <th class="text-start pt-3 option ">キャンセル日
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td>申込</td>
+                                    <td>2021/10/12</td>
+                                    <td>アルファアセットファンド京都祇園第4回
+                                    </td>
+                                    <td>¥1,000,000 <br> (10)
+                                    </td>
+                                    <td>- <br> (-)
+                                    </td>
+                                    <td>2021/10/12</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>申込</td>
+                                    <td>2021/10/12</td>
+                                    <td>アルファアセットファンド京都祇園第4回
+                                    </td>
+                                    <td>¥1,000,000 <br> (10)
+                                    </td>
+                                    <td>- <br> (-)
+                                    </td>
+                                    <td>2021/10/12</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>申込</td>
+                                    <td>2021/10/12</td>
+                                    <td>アルファアセットファンド京都祇園第4回
+                                    </td>
+                                    <td>¥1,000,000 <br> (10)
+                                    </td>
+                                    <td>- <br> (-)
+                                    </td>
+                                    <td>2021/10/12</td>
+                                    <td>-</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+        </script>
+
+</body>
+
+</html>
